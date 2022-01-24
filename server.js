@@ -4,6 +4,9 @@ const app= express();
 
 const port = process.env.PORT || 5000;
 
+app.get("/test",(req,res)=> {
+    res.send("This is working");
+})
 app.listen(port,()=> {
     console.log("Server is running",port);
 })
